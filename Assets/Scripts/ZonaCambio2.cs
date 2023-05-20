@@ -15,4 +15,15 @@ public class ZonaCambio2 : MonoBehaviour
             SceneManager.LoadScene(numeroEscena);
         }
     }
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }
