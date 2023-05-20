@@ -6776,7 +6776,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5c1489297ec73f409c3cbe315dbb367, type: 3}
   m_PrefabInstance: {fileID: 425489127}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2067103832
+--- !u!114 &2067103830
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6785,10 +6785,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2067103828}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa20333721b2f4c5885d0d3eec5c037b, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fb6bc48b3563124b893343a08bd45c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactableTag: Mano
+--- !u!65 &2067103831
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067103828}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020000001, y: 0.02, z: 0.02}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2075540788
 GameObject:
   m_ObjectHideFlags: 0
