@@ -6670,7 +6670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286da20ab9edae84ead9f35dd365757d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numeroEscena: 0
+  numeroEscena: 1
 --- !u!1 &1882376575 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4119666141578020195, guid: d3f4c55c732201c4d8a9b1e0a30232c0, type: 3}
