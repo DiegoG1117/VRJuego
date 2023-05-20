@@ -10,7 +10,7 @@ public class ZonaCambio2 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "antorcha")
         {
             SceneManager.LoadScene(numeroEscena);
         }
