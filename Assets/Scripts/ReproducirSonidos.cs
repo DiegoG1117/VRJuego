@@ -7,8 +7,7 @@ public class ReproducirSonidos : MonoBehaviour
 
     private void Start()
     {
-        // Reproducir el sonido una vez al iniciar el juego
-        PlaySound();
+       audioSource.Stop();
     }
 
     private void PlaySound()
