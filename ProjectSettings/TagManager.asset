@@ -11,6 +11,7 @@ TagManager:
   - Corazon
   - Ojos
   - Cerebro
+  - bola
   layers:
   - Default
   - TransparentFX
