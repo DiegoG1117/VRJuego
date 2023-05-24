@@ -1237,7 +1237,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 75246656}
-  objectToSet: {fileID: 458853194}
+  Cerebro: {fileID: 458853194}
+  Corazon: {fileID: 0}
+  Ojos: {fileID: 0}
+  Pulmon: {fileID: 0}
   objectToDelete: {fileID: 75246653}
   scriptNameToRemove: OVR Grabbable
 --- !u!4 &80014432 stripped
@@ -2201,7 +2204,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 127810030}
-  objectToSet: {fileID: 1728872378}
+  Cerebro: {fileID: 0}
+  Corazon: {fileID: 0}
+  Ojos: {fileID: 0}
+  Pulmon: {fileID: 1728872378}
   objectToDelete: {fileID: 127810026}
   scriptNameToRemove: OVR Grabbable
 --- !u!1001 &128001248
@@ -11973,7 +11979,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938054781}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.10053545, y: 0.08264404, z: 0.074831575}
@@ -11996,7 +12002,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 938054783}
-  objectToSet: {fileID: 1716500145}
+  Cerebro: {fileID: 0}
+  Corazon: {fileID: 0}
+  Ojos: {fileID: 1716500145}
+  Pulmon: {fileID: 0}
   objectToDelete: {fileID: 938054781}
   scriptNameToRemove: OVR Grabbable
 --- !u!1001 &939883120
@@ -17794,7 +17803,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333926581}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.021674126, y: 0.032205112, z: 0.017754572}
@@ -17817,7 +17826,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1333926585}
-  objectToSet: {fileID: 784450662}
+  Cerebro: {fileID: 0}
+  Corazon: {fileID: 784450662}
+  Ojos: {fileID: 0}
+  Pulmon: {fileID: 0}
   objectToDelete: {fileID: 1333926581}
   scriptNameToRemove: OVR Grabbable
 --- !u!1001 &1337805205
@@ -25430,7 +25442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7353089178829399059, guid: 9bc17cb432d2040e8bd6436a5c88acba, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7694965626626382148, guid: 9bc17cb432d2040e8bd6436a5c88acba, type: 3}
       propertyPath: m_Name
@@ -25442,6 +25454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7353089178829399057, guid: 9bc17cb432d2040e8bd6436a5c88acba, type: 3}
+    - {fileID: 7353089178829399058, guid: 9bc17cb432d2040e8bd6436a5c88acba, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9bc17cb432d2040e8bd6436a5c88acba, type: 3}
 --- !u!1001 &1875294076
 PrefabInstance:
@@ -26622,15 +26635,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 46adc4935165df84b9eee10a29748277, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.225
+      value: -7.356
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 46adc4935165df84b9eee10a29748277, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.968
+      value: 1.902
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 46adc4935165df84b9eee10a29748277, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.155
+      value: 4.284
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 46adc4935165df84b9eee10a29748277, type: 3}
       propertyPath: m_LocalRotation.w

@@ -5,7 +5,10 @@ using UnityEngine;
 public class ColocandoOrganos : MonoBehaviour
 {
     public Transform target;
-    public GameObject objectToSet;
+    public GameObject Cerebro;
+    public GameObject Corazon;
+    public GameObject Ojos;
+    public GameObject Pulmon;
     public GameObject objectToDelete; 
     public string scriptNameToRemove;  // Nombre del script que se eliminará
 
@@ -17,8 +20,20 @@ public class ColocandoOrganos : MonoBehaviour
             if (target != null)
         {
             // Igualar la posición y rotación del objeto actual al objeto de destino
-            objectToSet.transform.position = target.position;
-            objectToSet.transform.rotation = target.rotation;
+            Corazon.transform.position = target.position;
+            Corazon.transform.rotation = target.rotation;
+            Destroy(objectToDelete);
+            Rigidbody rb = Corazon.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                Destroy(rb);
+            }
+            MonoBehaviour scriptToRemove = Corazon.GetComponent(scriptNameToRemove) as MonoBehaviour;
+            if (scriptToRemove != null)
+            {
+                Destroy(scriptToRemove);
+            }
+    
         }
 
         }
@@ -27,8 +42,19 @@ public class ColocandoOrganos : MonoBehaviour
             if (target != null)
         {
             // Igualar la posición y rotación del objeto actual al objeto de destino
-              objectToSet.transform.position = target.position;
-            objectToSet.transform.rotation = target.rotation;
+              Pulmon.transform.position = target.position;
+            Pulmon.transform.rotation = target.rotation;
+            Destroy(objectToDelete);
+            Rigidbody rb = Pulmon.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                Destroy(rb);
+            }
+            MonoBehaviour scriptToRemove = Pulmon.GetComponent(scriptNameToRemove) as MonoBehaviour;
+            if (scriptToRemove != null)
+            {
+                Destroy(scriptToRemove);
+            }
         }
         
         }
@@ -37,24 +63,35 @@ public class ColocandoOrganos : MonoBehaviour
             if (target != null)
         {
             // Igualar la posición y rotación del objeto actual al objeto de destino
-          objectToSet.transform.position = target.position;
-            objectToSet.transform.rotation = target.rotation;
-        }
-        
-        }
-        if (other.tag == "Cerebro")
-        {
-            
-            // Igualar la posición y rotación del objeto actual al objeto de destino
-            objectToSet.transform.position = target.position;
-            objectToSet.transform.rotation = target.rotation;
-            Destroy(objectToDelete);
-            Rigidbody rb = objectToSet.GetComponent<Rigidbody>();
+          Ojos.transform.position = target.position;
+            Ojos.transform.rotation = target.rotation;
+             Destroy(objectToDelete);
+            Rigidbody rb = Ojos.GetComponent<Rigidbody>();
             if (rb != null)
             {
                 Destroy(rb);
             }
-            MonoBehaviour scriptToRemove = objectToSet.GetComponent(scriptNameToRemove) as MonoBehaviour;
+            MonoBehaviour scriptToRemove = Ojos.GetComponent(scriptNameToRemove) as MonoBehaviour;
+            if (scriptToRemove != null)
+            {
+                Destroy(scriptToRemove);
+            }
+        }
+        
+        }
+        if (other.tag == "Cerebro" && other.name == "Cerebro")
+        {
+            
+            // Igualar la posición y rotación del objeto actual al objeto de destino
+            Cerebro.transform.position = target.position;
+            Cerebro.transform.rotation = target.rotation;
+            Destroy(objectToDelete);
+            Rigidbody rb = Cerebro.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                Destroy(rb);
+            }
+            MonoBehaviour scriptToRemove = Cerebro.GetComponent(scriptNameToRemove) as MonoBehaviour;
             if (scriptToRemove != null)
             {
                 Destroy(scriptToRemove);
