@@ -7,6 +7,10 @@ TagManager:
   - Mano
   - antorcha
   - Domino
+  - Pulmon
+  - Corazon
+  - Ojos
+  - Cerebro
   layers:
   - Default
   - TransparentFX
