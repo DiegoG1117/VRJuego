@@ -9,8 +9,10 @@ public class ContadorMuerte : MonoBehaviour
     public Canvas canvasToEnable;
     public TextMeshProUGUI contadorText;
     public float tiempoInicial = 10f;
-
+    public Transform target;
+    public float speed;
     private float tiempoRestante;
+    private bool stopMovement = false;
 
     private void Start()
     {
@@ -25,6 +27,8 @@ public class ContadorMuerte : MonoBehaviour
         {
             canvasToEnable.enabled = true;
             InvokeRepeating("ActualizarContador", 1f, 1f);
+            speed = 0f;
+            stopMovement = true;
         }
     }
 
@@ -37,6 +41,15 @@ public class ContadorMuerte : MonoBehaviour
         {
             CancelInvoke("ActualizarContador");
             SceneManager.LoadScene(0); // Carga la escena número 0
+        }
+    }
+
+    void Update()
+    {
+        if (!stopMovement)
+        {
+            float step = speed * Time.deltaTime;
+            transform.position = Vector3.MoveTowards(transform.position, target.position, step);
         }
     }
 }
