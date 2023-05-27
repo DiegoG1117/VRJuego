@@ -534,20 +534,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &36030212
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36030210}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!65 &36030214
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2164,20 +2150,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.019780777, y: 0.014768441, z: 0.015504133}
   m_Center: {x: -0.00050520623, y: 0.0006313158, z: -0.00038668606}
---- !u!64 &122923280
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 122923278}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: -9032557090061056480, guid: bb33cb7b660aee54e8463b51e4dfdd47, type: 3}
 --- !u!54 &122923281
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11302,20 +11274,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bb33cb7b660aee54e8463b51e4dfdd47, type: 3}
   m_PrefabInstance: {fileID: 943281663}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &935009377
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 935009376}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: -9032557090061056480, guid: bb33cb7b660aee54e8463b51e4dfdd47, type: 3}
 --- !u!54 &935009381
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11511,7 +11469,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d06ca2e0e52a5c549b35a24297f95c7d, type: 2}
     - target: {fileID: 919132149155446097, guid: bb33cb7b660aee54e8463b51e4dfdd47, type: 3}
       propertyPath: m_Name
-      value: Libro Imaginacion
+      value: Imaginacion
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb33cb7b660aee54e8463b51e4dfdd47, type: 3}
@@ -19589,20 +19547,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.019780777, y: 0.014768441, z: 0.015504133}
   m_Center: {x: -0.00050520623, y: 0.0006313158, z: -0.00038668606}
---- !u!64 &1588788017
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1588788015}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: -9032557090061056480, guid: bb33cb7b660aee54e8463b51e4dfdd47, type: 3}
 --- !u!54 &1588788018
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21190,20 +21134,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.019780777, y: 0.014768441, z: 0.015504133}
   m_Center: {x: -0.00050520623, y: 0.0006313158, z: -0.00038668606}
---- !u!64 &1641588351
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1641588349}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: -9032557090061056480, guid: bb33cb7b660aee54e8463b51e4dfdd47, type: 3}
 --- !u!54 &1641588352
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22721,20 +22651,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.019780777, y: 0.014768441, z: 0.015504133}
   m_Center: {x: -0.00050520623, y: 0.0006313158, z: -0.00038668606}
---- !u!64 &1792296391
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1792296389}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: -9032557090061056480, guid: bb33cb7b660aee54e8463b51e4dfdd47, type: 3}
 --- !u!54 &1792296392
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22902,7 +22818,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: eab489d762d787c4b86582698eb801a2, type: 2}
     - target: {fileID: 919132149155446097, guid: 579db826b2dbf364587f9217bccfd880, type: 3}
       propertyPath: m_Name
-      value: LibronEstan
+      value: mesaLibro
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 579db826b2dbf364587f9217bccfd880, type: 3}
