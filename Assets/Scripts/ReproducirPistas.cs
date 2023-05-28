@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class ReproducirSonidos : MonoBehaviour
+public class ReproducirPistas : MonoBehaviour
 {
     public AudioSource audioSource;  // Referencia al componente AudioSource del objeto vacío
     public GameObject objectToDelete;
-
+    public string selectedTag;
     private void Start()
     {
        audioSource.Stop();
@@ -23,15 +23,10 @@ public class ReproducirSonidos : MonoBehaviour
     // Ejemplo de cómo reproducir el sonido en respuesta a un evento
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag(selectedTag))
         {
             PlaySound();
             Destroy(objectToDelete);
-            Collider collider = GetComponent<Collider>();
-        if (collider != null)
-        {
-            collider.enabled = false;
-        }
         }
     }
 }
