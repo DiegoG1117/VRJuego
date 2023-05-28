@@ -15466,6 +15466,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aea07a536b8a2be45a0c50af113dc8e0, type: 3}
+--- !u!1 &1167595520 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1153661398216476566, guid: 387f9c326f01b4f3b9bdb6c543d7fe12, type: 3}
+  m_PrefabInstance: {fileID: 4936283506992333748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1167595524
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167595520}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.119416, y: 5.137477, z: 0.189937}
+  m_Center: {x: 0.000001978362, y: -0.009032292, z: -0.094968356}
+--- !u!1 &1171441583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8596530358145543981, guid: 387f9c326f01b4f3b9bdb6c543d7fe12, type: 3}
+  m_PrefabInstance: {fileID: 4936283506992333748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1171441587
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171441583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.198262, y: 5.1982594, z: 0.6820611}
+  m_Center: {x: 0.0000019064173, y: 0.0000000144355, z: 0.5273093}
 --- !u!4 &1171897033 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: aea07a536b8a2be45a0c50af113dc8e0, type: 3}
@@ -30312,7 +30348,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &919132149143876995
+--- !u!65 &919132149143876996
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30323,8 +30359,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.032471, y: 0.45912755, z: 5.0208697}
-  m_Center: {x: 0.08930938, y: 0.17631398, z: -0.11857377}
+  m_Size: {x: 1, y: 1, z: 0.5136689}
+  m_Center: {x: -0.000015199184, y: 0.0000030975789, z: 2.8951774}
 --- !u!1001 &4936283506992333748
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30335,6 +30371,14 @@ PrefabInstance:
     - target: {fileID: 4831107648173190257, guid: 387f9c326f01b4f3b9bdb6c543d7fe12, type: 3}
       propertyPath: m_RootOrder
       value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 4831107648173190257, guid: 387f9c326f01b4f3b9bdb6c543d7fe12, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.15147004
+      objectReference: {fileID: 0}
+    - target: {fileID: 4831107648173190257, guid: 387f9c326f01b4f3b9bdb6c543d7fe12, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.15146996
       objectReference: {fileID: 0}
     - target: {fileID: 4831107648173190257, guid: 387f9c326f01b4f3b9bdb6c543d7fe12, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30380,9 +30424,27 @@ PrefabInstance:
       propertyPath: ojosObject
       value: 
       objectReference: {fileID: 1716500145}
+    - target: {fileID: 4936283507142664735, guid: 387f9c326f01b4f3b9bdb6c543d7fe12, type: 3}
+      propertyPath: m_Mass
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936283507259993355, guid: 387f9c326f01b4f3b9bdb6c543d7fe12, type: 3}
+      propertyPath: m_snapPosition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936283507259993355, guid: 387f9c326f01b4f3b9bdb6c543d7fe12, type: 3}
+      propertyPath: m_snapOrientation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936283508041853170, guid: 387f9c326f01b4f3b9bdb6c543d7fe12, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5206260554040702667, guid: 387f9c326f01b4f3b9bdb6c543d7fe12, type: 3}
       propertyPath: m_Name
       value: 01mazeUpload
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4936283508009990650, guid: 387f9c326f01b4f3b9bdb6c543d7fe12, type: 3}
+    - {fileID: 4936283507196879556, guid: 387f9c326f01b4f3b9bdb6c543d7fe12, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 387f9c326f01b4f3b9bdb6c543d7fe12, type: 3}
