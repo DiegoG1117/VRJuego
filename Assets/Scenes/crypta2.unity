@@ -11552,7 +11552,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d06ca2e0e52a5c549b35a24297f95c7d, type: 2}
     - target: {fileID: 919132149155446097, guid: bb33cb7b660aee54e8463b51e4dfdd47, type: 3}
       propertyPath: m_Name
-      value: Imaginacion
+      value: Libro imaginacion
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb33cb7b660aee54e8463b51e4dfdd47, type: 3}
@@ -23625,7 +23625,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 99.35649
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
