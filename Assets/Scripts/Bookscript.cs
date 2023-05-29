@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bookscript : MonoBehaviour
+public class BookInfraestructuraController : MonoBehaviour
 {
      void Start()
     {
