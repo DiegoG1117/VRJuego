@@ -31,6 +31,16 @@ public class MesaLibroScript : MonoBehaviour
     {
         // Implementa aquí la lógica del evento que deseas que suceda cuando los tres libros están en la mesa
         Debug.Log("¡Se han colocado los tres libros correctos en la mesa!");
-        Cerebro.SetActive(true);
+
+        // Desactivar la gravedad actual del objeto Cerebro
+        Rigidbody cerebroRigidbody = Cerebro.GetComponent<Rigidbody>();
+        cerebroRigidbody.useGravity = false;
+
+        // Colocar el objeto Cerebro en una nueva posición (posición de caída)
+        Vector3 nuevaPosicion = new Vector3(Cerebro.transform.position.x, 0f, Cerebro.transform.position.z);
+        Cerebro.transform.position = nuevaPosicion;
+
+        // Activar la gravedad para que el objeto Cerebro caiga
+        cerebroRigidbody.useGravity = true;
     }
 }
