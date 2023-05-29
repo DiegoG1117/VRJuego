@@ -1,20 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BookImaginacionController : MonoBehaviour
 {
-    public Texture imaginacionTexture;
-    private Renderer bookRenderer;
+    [SerializeField] private Image customImage;
 
-    private void Start()
+    void OnTriggerEnter(Collider other)
     {
-        bookRenderer = GetComponentInChildren<Renderer>();
-
-        if (bookRenderer != null)
+        if(other.CompareTag("Player"))
         {
-            bookRenderer.enabled = true; // Inicialmente oculto
+            customImage.enabled = true;
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            customImage.enabled = false;
         }
     }
 }
-
