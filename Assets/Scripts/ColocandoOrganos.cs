@@ -11,12 +11,15 @@ public class ColocandoOrganos : MonoBehaviour
     public GameObject Ojos;
     public GameObject Pulmon;
     public GameObject objectToDelete; 
-    public int ContadorFinal;
     public string scriptNameToRemove;  // Nombre del script que se eliminará
     public GameObject objetoOculto;
     public Animator animator;
     public AudioSource audioSource;
     public GameObject PersonajeFinal;
+    public bool organo1;
+    public bool organo2;
+    public bool organo3;
+    public bool organo4;
       private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Corazon")
@@ -37,7 +40,7 @@ public class ColocandoOrganos : MonoBehaviour
             {
                 Destroy(scriptToRemove);
             }
-            ContadorFinal = ContadorFinal + 1;
+            organo1 = true;
         }
 
         }
@@ -60,7 +63,7 @@ public class ColocandoOrganos : MonoBehaviour
                 Destroy(scriptToRemove);
             }
 
-            ContadorFinal = ContadorFinal + 1;
+            organo2 = true;
         }
         
         }
@@ -83,7 +86,7 @@ public class ColocandoOrganos : MonoBehaviour
                 Destroy(scriptToRemove);
             }
 
-            ContadorFinal = ContadorFinal + 1;
+            organo3 = true;
         }
         
         }
@@ -104,7 +107,7 @@ public class ColocandoOrganos : MonoBehaviour
             {
                 Destroy(scriptToRemove);
             }
-            ContadorFinal = ContadorFinal + 1;
+            organo4 = true;
     
         
         }
@@ -114,7 +117,10 @@ public class ColocandoOrganos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ContadorFinal = 0;
+        organo1 = false;
+         organo2 = false;
+          organo3 = false;
+           organo4 = false;
         objetoOculto.SetActive(false);
         animator.SetBool("estatua", false);
         audioSource.Stop();
@@ -123,14 +129,14 @@ public class ColocandoOrganos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         Debug.Log(ContadorFinal);
-           if(ContadorFinal >= 4){
+         
+           if(organo1 == true && organo2 == true && organo3 == true && organo4 == true){
 
                 objetoOculto.SetActive(true);
                 animator.SetBool("Fase_Final", true);
                 audioSource.Play();
-                Corazon.transform.position = target.position;
-                Corazon.transform.rotation = target.rotation;
+                PersonajeFinal.transform.position = target2.position;
+                PersonajeFinal.transform.rotation = target2.rotation;
 
         }
     }
