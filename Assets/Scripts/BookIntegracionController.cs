@@ -17,7 +17,7 @@ public class BookIntegracionController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Jugador"))
+        if (other.CompareTag("Player"))
         {
             jugadorInteractuando = true;
             MostrarPlano();
@@ -26,7 +26,7 @@ public class BookIntegracionController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Jugador"))
+        if (other.CompareTag("Player"))
         {
             jugadorInteractuando = false;
             OcultarPlano();

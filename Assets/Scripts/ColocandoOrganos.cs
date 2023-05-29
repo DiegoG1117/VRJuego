@@ -5,6 +5,7 @@ using UnityEngine;
 public class ColocandoOrganos : MonoBehaviour
 {
     public Transform target;
+    public Transform target2;
     public GameObject Cerebro;
     public GameObject Corazon;
     public GameObject Ojos;
@@ -15,7 +16,7 @@ public class ColocandoOrganos : MonoBehaviour
     public GameObject objetoOculto;
     public Animator animator;
     public AudioSource audioSource;
-
+    public GameObject PersonajeFinal;
       private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Corazon")
@@ -128,9 +129,12 @@ public class ColocandoOrganos : MonoBehaviour
                 objetoOculto.SetActive(true);
                 animator.SetBool("Fase_Final", true);
                 audioSource.Play();
+                Corazon.transform.position = target.position;
+                Corazon.transform.rotation = target.rotation;
 
         }
     }
+
 }
 
     

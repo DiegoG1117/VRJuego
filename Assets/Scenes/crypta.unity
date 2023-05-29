@@ -1017,6 +1017,23 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4388650825840243884, guid: fe6f62685ccfe2c4092d3169335a487f, type: 3}
   m_PrefabInstance: {fileID: 317894375}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &43235235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43235234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!1001 &47655325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1498,6 +1515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 75246656}
+  target2: {fileID: 0}
   Cerebro: {fileID: 458853194}
   Corazon: {fileID: 0}
   Ojos: {fileID: 0}
@@ -1508,6 +1526,7 @@ MonoBehaviour:
   objetoOculto: {fileID: 1867878641}
   animator: {fileID: 1867878642}
   audioSource: {fileID: 1867878643}
+  PersonajeFinal: {fileID: 0}
 --- !u!114 &75246658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2416,6 +2435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 127810030}
+  target2: {fileID: 0}
   Cerebro: {fileID: 0}
   Corazon: {fileID: 0}
   Ojos: {fileID: 0}
@@ -2426,6 +2446,7 @@ MonoBehaviour:
   objetoOculto: {fileID: 1867878641}
   animator: {fileID: 1867878642}
   audioSource: {fileID: 1867878643}
+  PersonajeFinal: {fileID: 0}
 --- !u!114 &127810033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2983,6 +3004,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 2.2204459e-16, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &137844831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4388650827240790117, guid: fe6f62685ccfe2c4092d3169335a487f, type: 3}
+  m_PrefabInstance: {fileID: 317894375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &137844833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137844831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!95 &140231973 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8096341607301297030, guid: 27bebe1217b0d45c7b93c18322c9392e, type: 3}
@@ -12266,6 +12309,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4080719392071276, guid: 615688eb22692db418c6f8646a5b507c, type: 3}
   m_PrefabInstance: {fileID: 877945437}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &884929333 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4388650827033601679, guid: fe6f62685ccfe2c4092d3169335a487f, type: 3}
+  m_PrefabInstance: {fileID: 317894375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &884929335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884929333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!1001 &897142134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12836,6 +12901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 938054783}
+  target2: {fileID: 0}
   Cerebro: {fileID: 0}
   Corazon: {fileID: 0}
   Ojos: {fileID: 1716500145}
@@ -12846,6 +12912,7 @@ MonoBehaviour:
   objetoOculto: {fileID: 1867878641}
   animator: {fileID: 1867878642}
   audioSource: {fileID: 1867878643}
+  PersonajeFinal: {fileID: 0}
 --- !u!114 &938054785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19057,6 +19124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1333926585}
+  target2: {fileID: 0}
   Cerebro: {fileID: 0}
   Corazon: {fileID: 784450662}
   Ojos: {fileID: 0}
@@ -19067,6 +19135,7 @@ MonoBehaviour:
   objetoOculto: {fileID: 1867878641}
   animator: {fileID: 1867878642}
   audioSource: {fileID: 1867878643}
+  PersonajeFinal: {fileID: 0}
 --- !u!1001 &1337805205
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26130,15 +26199,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2301531f504de7846be3362695475d59, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.948
+      value: -1.838
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2301531f504de7846be3362695475d59, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.347
+      value: 2.018
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2301531f504de7846be3362695475d59, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.1344348
+      value: 0.088
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2301531f504de7846be3362695475d59, type: 3}
       propertyPath: m_LocalRotation.w
@@ -31052,6 +31121,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: aea07a536b8a2be45a0c50af113dc8e0, type: 3}
   m_PrefabInstance: {fileID: 2116793563}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2124185443 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4388650826454026334, guid: fe6f62685ccfe2c4092d3169335a487f, type: 3}
+  m_PrefabInstance: {fileID: 317894375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2124185445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124185443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!4 &2126449358 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: aea07a536b8a2be45a0c50af113dc8e0, type: 3}
@@ -31208,6 +31299,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aea07a536b8a2be45a0c50af113dc8e0, type: 3}
+--- !u!1 &2132657451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4388650827425102813, guid: fe6f62685ccfe2c4092d3169335a487f, type: 3}
+  m_PrefabInstance: {fileID: 317894375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2132657452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132657451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!1 &2136039087
 GameObject:
   m_ObjectHideFlags: 0
