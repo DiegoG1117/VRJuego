@@ -1,25 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class BookIntegracionController : MonoBehaviour
 {
-    [SerializeField] private Image customImage;
+    public GameObject plano;
 
-    void OnTriggerEnter(Collider other)
+    private bool jugadorInteractuando;
+    private Vector3 planoScale;
+
+    private void Start()
     {
-        if(other.CompareTag("Player"))
+        planoScale = plano.transform.localScale;
+        OcultarPlano();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Jugador"))
         {
-            customImage.enabled = true;
+            jugadorInteractuando = true;
+            MostrarPlano();
         }
     }
 
-    void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Jugador"))
         {
-            customImage.enabled = false;
+            jugadorInteractuando = false;
+            OcultarPlano();
+        }
+    }
+
+    private void MostrarPlano()
+    {
+        // Escala el plano para que sea visible
+        plano.transform.localScale = planoScale;
+    }
+
+    private void OcultarPlano()
+    {
+        // Escala el plano para que sea invisible
+        plano.transform.localScale = Vector3.zero;
+    }
+
+    private void Update()
+    {
+        if (jugadorInteractuando && Input.GetKeyDown(KeyCode.E))
+        {
+            // Realiza la acción deseada cuando el jugador interactúa con el objeto
+            Debug.Log("El jugador interactuó con el objeto.");
         }
     }
 }
