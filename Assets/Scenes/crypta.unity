@@ -25596,6 +25596,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 458853194}
     - target: {fileID: 8775633642101232491, guid: 30c9a404b0493ad43b4709c0796acb7a, type: 3}
+      propertyPath: LibroInmersion
+      value: 
+      objectReference: {fileID: 593194545}
+    - target: {fileID: 8775633642101232491, guid: 30c9a404b0493ad43b4709c0796acb7a, type: 3}
       propertyPath: libroInmersion
       value: 
       objectReference: {fileID: 593194545}
@@ -25623,7 +25627,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.0173
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8775633642101232490, guid: 30c9a404b0493ad43b4709c0796acb7a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 30c9a404b0493ad43b4709c0796acb7a, type: 3}
 --- !u!1 &1838291855
 GameObject:
