@@ -1,27 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BookInfraestructuraController : MonoBehaviour
 {
-     void Start()
+    public GameObject infraestructuraObject;
+
+       void Start()
     {
         infraestructuraObject.SetActive(false);
     }
-    public GameObject infraestructuraObject;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             infraestructuraObject.SetActive(true);
         }
-
-        else
-        {
-            infraestructuraObject.SetActive(false);
-        }
-        
     }
-
 }

@@ -8,33 +8,41 @@ public class MesaLibroScript : MonoBehaviour
     public GameObject libroInteraccion;
     public GameObject libroImaginacion;
     public GameObject Cerebro;
+    public int ContadorLibros;
 
-    private bool correctPlacement = false;
-    private bool cerebroVisible = false;
 
-    private void Update()
+       void Start()
     {
-        // Verificar si los tres libros correctos están en la mesa
-        if (LibroInmersion.activeSelf && libroInteraccion.activeSelf && libroImaginacion.activeSelf)
+        Cerebro.SetActive(false);
+        ContadorLibros = 0;
+    }
+
+      private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Imaginacion")
         {
-            correctPlacement = true;
-            // Aquí puedes realizar cualquier acción o evento cuando los libros correctos estén en la mesa
-            // Por ejemplo, puedes llamar a una función para activar un evento o mostrar un mensaje de éxito
-            RealizarEvento();
+            libroImaginacion.SetActive(false);
+            ContadorLibros = ContadorLibros + 1;
         }
-        else
+         if (other.tag == "Interaccion")
         {
-            correctPlacement = false;
+            libroInteraccion.SetActive(false);
+            ContadorLibros = ContadorLibros + 1;
+        }
+         if (other.tag == "Inmersion")
+        {
+            LibroInmersion.SetActive(false);
+            ContadorLibros = ContadorLibros + 1;
+        }
+
+    }
+    void Update()
+    {
+        if(ContadorLibros == 3){
+                Cerebro.SetActive(true);
         }
     }
 
-    private void RealizarEvento()
-    {
-        // Implementa aquí la lógica del evento que deseas que suceda cuando los tres libros están en la mesa
-        Debug.Log("¡Se han colocado los tres libros correctos en la mesa!");
 
-        // Cambiar el estado de visibilidad del objeto Cerebro
-        cerebroVisible = !cerebroVisible;
-        Cerebro.SetActive(cerebroVisible);
-    }
+
 }
