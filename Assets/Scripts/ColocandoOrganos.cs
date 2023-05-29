@@ -10,8 +10,11 @@ public class ColocandoOrganos : MonoBehaviour
     public GameObject Ojos;
     public GameObject Pulmon;
     public GameObject objectToDelete; 
+    public int ContadorFinal;
     public string scriptNameToRemove;  // Nombre del script que se eliminará
-
+    public GameObject objetoOculto;
+    public Animator animator;
+    public AudioSource audioSource;
 
       private void OnTriggerEnter(Collider other)
     {
@@ -33,7 +36,7 @@ public class ColocandoOrganos : MonoBehaviour
             {
                 Destroy(scriptToRemove);
             }
-    
+            ContadorFinal = ContadorFinal + 1;
         }
 
         }
@@ -55,6 +58,8 @@ public class ColocandoOrganos : MonoBehaviour
             {
                 Destroy(scriptToRemove);
             }
+
+            ContadorFinal = ContadorFinal + 1;
         }
         
         }
@@ -76,6 +81,8 @@ public class ColocandoOrganos : MonoBehaviour
             {
                 Destroy(scriptToRemove);
             }
+
+            ContadorFinal = ContadorFinal + 1;
         }
         
         }
@@ -96,6 +103,7 @@ public class ColocandoOrganos : MonoBehaviour
             {
                 Destroy(scriptToRemove);
             }
+            ContadorFinal = ContadorFinal + 1;
     
         
         }
@@ -105,12 +113,24 @@ public class ColocandoOrganos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        ContadorFinal = 0;
+        objetoOculto.SetActive(false);
+        animator.SetBool("estatua", false);
+        audioSource.Stop();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+         Debug.Log(ContadorFinal);
+           if(ContadorFinal >= 4){
+
+                objetoOculto.SetActive(true);
+                animator.SetBool("Fase_Final", true);
+                audioSource.Play();
+
+        }
     }
 }
+
+    
